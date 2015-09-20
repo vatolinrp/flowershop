@@ -656,8 +656,6 @@ body {
 .flower-wrapper{
 	float:left;
 	width:100px;
-	border-radius:10px;
-	background-color:lightgray;
 	font-size: 10px;
   	text-align: center;
 }
