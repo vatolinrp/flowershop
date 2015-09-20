@@ -10,7 +10,6 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.util.Arrays;
 
 import static com.mongodb.client.model.Filters.eq;
@@ -18,8 +17,6 @@ import static com.mongodb.client.model.Filters.eq;
 @Repository
 public class UserRepositoryDaoImpl implements UserRepositoryDao
 {
-    @Resource
-    private LogRepositoryDao logRepositoryDao;
 
     @Override
     public User findByUsername(String username)
@@ -32,7 +29,6 @@ public class UserRepositoryDaoImpl implements UserRepositoryDao
         MongoDatabase db = mongoClient.getDatabase("flowers");
 
         final User user = new User();
-        user.setName("notRostislav");
 
         FindIterable<Document> iterable = db.getCollection("USERS").find(eq("LOGIN", username));
         iterable.forEach(new Block<Document>()
@@ -40,12 +36,12 @@ public class UserRepositoryDaoImpl implements UserRepositoryDao
             @Override
             public void apply(final Document document)
             {
-                logRepositoryDao.setLogMessage("in apply method");
                 user.setName(document.getString("FIRSTNAME"));
                 user.setSurname(document.getString("LASTNAME"));
                 user.setPassword(document.getString("PASS"));
                 user.setUsername(document.getString("LOGIN"));
-                //user.setRole(document.getInteger("ROLE"));
+                user.setId(document.getLong("USER_ID"));
+                user.setRole(document.getLong("ROLE"));
             }
         });
         return user;

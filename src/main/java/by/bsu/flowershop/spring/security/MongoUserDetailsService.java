@@ -16,10 +16,7 @@ import org.springframework.stereotype.Component;
 
 import by.bsu.flowershop.mongodb.repositories.UserRepositoryDao;
 
-/**
- *
- * @author anjana.m
- */
+
 @Component
 public class MongoUserDetailsService implements UserDetailsService
 {
@@ -49,7 +46,7 @@ public class MongoUserDetailsService implements UserDetailsService
         return userdetails;
     }
 
-    public List<GrantedAuthority> getAuthorities(Integer role)
+    public List<GrantedAuthority> getAuthorities(Long role)
     {
         logRepositoryDao.setLogMessage("in get authorities method");
         List<GrantedAuthority> authList = new ArrayList<GrantedAuthority>();
