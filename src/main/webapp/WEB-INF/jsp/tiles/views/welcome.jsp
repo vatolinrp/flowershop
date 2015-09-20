@@ -26,10 +26,10 @@
 								</div>
 							</div>
 							<div id="login-input">
-								<input class="login-input-line" type="text" name="username"
+								<input class="login-input-line" type="text" name="j_username"
 									required>
 									 <input class="login-input-line"
-									type="password" name="password" required>
+									type="password" name="j_password" required>
 							</div>
 						</div>
 						<div id="submit-btn">

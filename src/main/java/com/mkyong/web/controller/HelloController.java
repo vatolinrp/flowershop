@@ -15,51 +15,51 @@ import java.net.UnknownHostException;
 
 @Controller
 public class HelloController {
-
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
-
-		model.addAttribute("message", "Spring 3 MVC Hello World");
-		return "hello";
-
-	}
-
-	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
-	public ModelAndView hello(@PathVariable("name") String name) {
-
-		boolean auth = false;
-		try
-		{
-			MongoClient mongoClient = new MongoClient("127.6.49.4",27017);
-			DB db = mongoClient.getDB("flowers");
-			auth = db.authenticate("admin", "NfAc-CBXGWN9".toCharArray());
-			if(auth)
-			{
-				DBCollection table = db.getCollection("TEST_COLLECTION");
-				BasicDBObject document = new BasicDBObject();
-				document.put("id", 101);
-				document.put("value", "some_value");
-				table.insert(document);
-			}
-		}
-		catch (UnknownHostException e)
-		{
-			e.printStackTrace();
-		}
-
-		ModelAndView model = new ModelAndView();
-		model.setViewName("hello");
-		if(auth)
-		{
-			model.addObject("msg", "done");
-		}
-		else
-		{
-			model.addObject("msg", "not done");
-		}
-
-		return model;
-
-	}
+//
+//	@RequestMapping(value = "/", method = RequestMethod.GET)
+//	public String printWelcome(ModelMap model) {
+//
+//		model.addAttribute("message", "Spring 3 MVC Hello World");
+//		return "hello";
+//
+//	}
+//
+//	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
+//	public ModelAndView hello(@PathVariable("name") String name) {
+//
+//		boolean auth = false;
+//		try
+//		{
+//			MongoClient mongoClient = new MongoClient("127.6.49.4",27017);
+//			DB db = mongoClient.getDB("flowers");
+//			auth = db.authenticate("admin", "NfAc-CBXGWN9".toCharArray());
+//			if(auth)
+//			{
+//				DBCollection table = db.getCollection("TEST_COLLECTION");
+//				BasicDBObject document = new BasicDBObject();
+//				document.put("id", 101);
+//				document.put("value", "some_value");
+//				table.insert(document);
+//			}
+//		}
+//		catch (UnknownHostException e)
+//		{
+//			e.printStackTrace();
+//		}
+//
+//		ModelAndView model = new ModelAndView();
+//		model.setViewName("hello");
+//		if(auth)
+//		{
+//			model.addObject("msg", "done");
+//		}
+//		else
+//		{
+//			model.addObject("msg", "not done");
+//		}
+//
+//		return model;
+//
+//	}
 
 }
