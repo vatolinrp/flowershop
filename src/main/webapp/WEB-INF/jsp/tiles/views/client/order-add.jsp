@@ -7,8 +7,7 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-			
-				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/flower-shop/order-add" commandName="orderTO" style="float: left;">
+				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/flower-shop/order-add" commandName="fOrder" style="float: left;">
 					<div id="editNews">
 						<div class="input-component">
 							<div class="component-name">

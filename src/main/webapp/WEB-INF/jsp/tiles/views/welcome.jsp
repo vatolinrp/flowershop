@@ -6,7 +6,7 @@
 		<div class="content-wrapper">
 			<div class="welcome-page">
 				<div class="welcome-div">
-					<a class="welcome-link" href="/flower-shop/create-by-yourself" style="color: white;" ><spring:message code="client.create.by.yourself" /></a>
+					<a class="welcome-link" href="/create-by-yourself" style="color: white;" ><spring:message code="client.create.by.yourself" /></a>
 				</div>
 				<div class="welcome-div">
 					<a class="welcome-link" href="/flower-shop/create-by-choosing" style="color: white;" ><spring:message code="client.create.by.generator" /></a>
