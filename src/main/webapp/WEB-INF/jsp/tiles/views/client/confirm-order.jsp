@@ -9,19 +9,32 @@
 			<div id="news-add-edit-wrapper">
 				<form:form method="post" action="/flower-shop/result-creation" commandName="fOrder">
 					<div id="editNews">
-						<div class="cost"><spring:message code="client.order.price" /> ${fOrder.cost}</div>
+						<div class="order-info">
+							<spring:message code="admin.order.name" />
+							${fOrder.customerName}
+							<br />
+							<spring:message code="admin.order.phone" />
+							${fOrder.customerPhone}
+							<br />
+							<spring:message code="admin.order.address" />
+							${fOrder.address}
+							<br />
+							<spring:message code="admin.order.price" />
+							${fOrder.cost} <br />
+						</div>
 						<div id="bouquet-wrapper-ready">
 							<div id="bouquet">
 								"${positions}"
 							</div>
 						</div>
+
 						<form:hidden path="customerName" value="${fOrder.customerName}"/>
 						<form:hidden path="customerPhone" value="${fOrder.customerPhone}"/>
 						<form:hidden path="cost" value="${fOrder.cost}"/>
 						<form:hidden path="placement" value="${fOrder.placement}"/>
 						<form:hidden path="address" value="${fOrder.address}"/>
 						<input type="submit" id="create-btn"
-							value="<spring:message code="admin.btn.create" />">
+							value="<spring:message code="btn.confirm" />">
 					</div>
 				</form:form>
 			</div>

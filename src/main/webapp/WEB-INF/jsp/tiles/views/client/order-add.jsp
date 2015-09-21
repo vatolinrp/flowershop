@@ -68,8 +68,6 @@
     </div>
   </div>
 </div>
-  Flowers to choose from:
-  <br/>
   <div id="columns" class="result">
   	<div class="flower-wrapper">
   		<div class="flower-id">1: 10 000 Br</div>

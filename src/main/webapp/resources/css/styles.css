@@ -123,6 +123,8 @@ html, body {
 #submit-btn
 {
 	font-family: Verdana;
+    background-color: transparent;
+    color: whitesmoke;
 	overflow:hidden;
 }
 
@@ -150,6 +152,9 @@ html, body {
 	width: 100px;
 	height: 40px;
 	float: right;
+	font-family: Verdana;
+    background-color: transparent;
+    color: whitesmoke;
 }
 
 #menu-list {
@@ -266,6 +271,9 @@ html, body {
 #delete-btn {
 	text-align: right;
 	margin: 30px;
+	font-family: Verdana;
+    background-color: transparent;
+    color: whitesmoke;
 }
 
 #delete {
@@ -280,11 +288,11 @@ html, body {
 	width: 430px;
 }
 
-.component-name {
+.component-name
+{
 	float: left;
-	background-color: white;
 	font-family: Verdana;
-	border-radius: 10px;
+	color: whitesmoke;
 	padding: 0 10px;
 }
 
@@ -342,6 +350,8 @@ html, body {
 	height: 40px;
 	margin-bottom: 200px;
 	font-family: Verdana;
+    background-color: transparent;
+    color: whitesmoke;
 }
 
 
@@ -635,13 +645,14 @@ body {
 	height: 30px;
 }
 
-.order-info {
-	background-color: white;
-	border-radius: 10px;
+.order-info
+{
 	width: 200px;
 	margin: auto;
 	margin-left: 700px;
     margin-top: 110px;
+    font-family: Verdana;
+    color: whitesmoke;
 }
 
 .cost {
@@ -652,11 +663,24 @@ body {
 	width: 150px;
 }
 
-#create-btn {
-	margin-right: 15px;
-	width: 100px;
+#create-btn
+{
 	height: 40px;
 	margin-bottom: 200px;
+	font-family: Verdana;
+	background-color: transparent;
+	color: whitesmoke;
+}
+input[type=text], textarea
+{
+	background-color: transparent !important;
+	color: whitesmoke;
+	font-family: Verdana;
+}
+input[type=password]
+{
+	background-color: transparent !important;
+	color: whitesmoke;
 	font-family: Verdana;
 }
 .flower-wrapper{
