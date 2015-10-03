@@ -1,6 +1,7 @@
 package by.bsu.flowershop.controller;
 
 import by.bsu.flowershop.model.entities.FOrder;
+import by.bsu.flowershop.model.entities.ListFOrders;
 import by.bsu.flowershop.model.service.FOrderService;
 import by.bsu.flowershop.model.service.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ import java.util.Map;
 @Controller
 public class AdminPageController
 {
-    //private DeleteOrders deleteOrders;
+    private ListFOrders deleteOrders;
 
     @Autowired
     private FOrderService fOrderService;
@@ -22,18 +23,18 @@ public class AdminPageController
     @RequestMapping(value = { "/order-list" }, method = RequestMethod.GET)
     public String orderList(Map<String, Object> model)
     {
-//        List<FOrder> list = null;
-//        deleteOrders = new DeleteOrders();
-//        try
-//        {
-//            list = orderService.getAllOrders();
-//        }
-//        catch (ServiceException e)
-//        {
-//            return "admin/error-admin";
-//        }
-//        deleteOrders.setOrderTOList(list);
-//        model.put("deleteOrderTO", deleteOrders);
+        List<FOrder> list = null;
+        deleteOrders = new ListFOrders();
+        try
+        {
+            list = fOrderService.getAllOrders();
+        }
+        catch (ServiceException e)
+        {
+            return "admin/error-admin";
+        }
+        deleteOrders.setOrderTOList(list);
+        model.put("deleteOrderTO", deleteOrders);
         return "admin/order-list";
     }
 }

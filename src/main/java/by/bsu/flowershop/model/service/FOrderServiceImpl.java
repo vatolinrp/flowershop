@@ -44,4 +44,10 @@ public class FOrderServiceImpl implements FOrderService
     {
         return orderDao.create(order);
     }
+
+    @Override
+    public List<FOrder> getAllOrders() throws ServiceException
+    {
+        return orderDao.getAllOrders();
+    }
 }
