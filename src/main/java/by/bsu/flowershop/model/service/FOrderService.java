@@ -6,5 +6,5 @@ public interface FOrderService
 {
     Integer getCost(String flowers) throws ServiceException;
 
-    void create(FOrder fOrder) throws ServiceException;
+    String create(FOrder fOrder) throws ServiceException;
 }

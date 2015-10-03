@@ -40,8 +40,8 @@ public class FOrderServiceImpl implements FOrderService
     }
 
     @Override
-    public void create(FOrder order) throws ServiceException
+    public String create(FOrder order) throws ServiceException
     {
-        orderDao.create(order);
+        return orderDao.create(order);
     }
 }

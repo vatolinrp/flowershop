@@ -35,9 +35,4 @@ public class CommonPageController
         return new ModelAndView("welcome", "message", message);
     }
 
-    @RequestMapping(value = { "/order-list" })
-    public String orderList()
-    {
-        return "admin/order-list";
-    }
 }

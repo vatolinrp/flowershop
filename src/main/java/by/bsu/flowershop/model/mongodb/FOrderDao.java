@@ -2,7 +2,11 @@ package by.bsu.flowershop.model.mongodb;
 
 import by.bsu.flowershop.model.entities.FOrder;
 
+import java.util.List;
+
 public interface FOrderDao
 {
-    void create(FOrder order);
+    String create(FOrder order);
+
+    List<FOrder> getAllOrders();
 }
