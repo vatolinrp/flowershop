@@ -22,7 +22,7 @@
 <body>
 	<div id="wrapper">
 		<tiles:insertAttribute name="header" />
-		<div id="admin-content">
+		<div class="admin-content">
 			<tiles:insertAttribute name="body" />
 		</div>
 		<tiles:insertAttribute name="footer" />
