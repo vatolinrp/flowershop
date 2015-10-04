@@ -8,28 +8,26 @@
 		<div class="body">
 			<div id="menu-wrapper">
 					<div class="menu-element">
-						<spring:url value="/order-list" var="orderlistUrl"
-							htmlEscape="true" />
-						<a href="${orderlistUrl}"><spring:message
-								code="admin.order.list" /></a>
+						<spring:url value="/order-list" var="orderlistUrl"	htmlEscape="true" />
+						<a href="${orderlistUrl}">
+							<spring:message	code="admin.order.list" />
+						</a>
 					</div>
 					<div class="menu-element">
 						<c:url value="/j_spring_security_logout" var="logoutUrl" />
 						<a href="${logoutUrl}"><spring:message code="admin.logout" /></a>
 					</div>
 			</div>
-			<form:form method="post" action="order-list"
-				commandName="deleteOrderTO">
+			<form:form method="post" action="order-list" commandName="deleteOrderTO">
 				<div class="list-options">
-					<div id="delete-btn">
-						<input id="delete" type="submit"
-							value="<spring:message code="admin.btn.delete" />">
-					</div>
+					<div id="submit-btn">
+                    	<input class="btn" name="submit" type="submit" value="<spring:message code="admin.btn.delete" />">
+                    </div>
 					<div class="pagination"></div>
 				</div>
 				<div class="list-of-posts">
 					<c:forEach var="listValue" items="${deleteOrderTO.orderTOList}"	varStatus="status">
-						<div class="news-component">
+						<div class="order-component">
 							<div class="title-component">
 								<div class="title">${listValue.customerName}</div>
 								<div class="author">
@@ -42,11 +40,12 @@
 										pattern="dd/MM/yyyy" />
 								</div>
 							</div>
-							<div class="news-content">${listValue.address}</div>
-							<div class="news-footer">
+							<div class="order-content">
+								${listValue.address}
+							</div>
+							<div class="order-footer">
 								<div class="checkbox">
-									<form:checkbox path="orderTOList[${status.index}].check"
-										value="delete" />
+									<form:checkbox path="orderTOList[${status.index}].check" value="delete" />
 								</div>
 								<form:hidden path="orderTOList[${status.index}].orderId"
 									value="${listValue.orderId}" />

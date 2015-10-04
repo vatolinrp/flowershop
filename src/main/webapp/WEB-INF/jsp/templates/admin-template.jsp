@@ -9,8 +9,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
 <title><spring:message code="admin.page.order" /></title>
-<link href="<c:url value="/resources/css/styles.css" />"
-	rel="stylesheet">
+<link href="<c:url value="/resources/css/styles.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/pagination-style.css" />" rel="stylesheet">
 <script src="<c:url value="/resources/js/checkbox.js" />"></script>
 <script src="<c:url value="/resources/js/jquery.js" />"></script>
 <script src="<c:url value="/resources/js/paginate.js" />"></script>

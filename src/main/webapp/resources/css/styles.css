@@ -195,9 +195,7 @@ html, body {
 	width: 230px;
 	float: left;
 	margin-top: 15px;
-	background-color: white;
-  	border-radius: 10px;
-  	margin-left: 19px;
+  	margin-left: 20px;
 }
 
 #filter {
@@ -206,12 +204,14 @@ html, body {
 	margin-top: 20px;
 }
 
-.news-component {
+.order-component
+ {
 	overflow: hidden;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 10px;
+	padding: 10px;
 	border-radius: 10px;
+	border-color: whitesmoke;
+    border-style: solid;
 }
 
 .title-component {
@@ -236,11 +236,11 @@ html, body {
 	text-decoration: underline;
 }
 
-.news-content {
+.order-content {
 	
 }
 
-.news-footer {
+.order-footer {
 	overflow: hidden;
 }
 
@@ -392,43 +392,8 @@ html, body {
 	margin-right: 10px;
 }
 
-.pagination {
-	overflow: hidden;
-	  margin-top: 25px;
-}
-
-.pagination li {
-	list-style: none;
-	float: left;
-	width: 20px;
-	height: 20px;
-	border: solid;
-	border-color: #C6C6C6;
-	background-color: #EFEFEF;
-	color: black;
-	text-align: center;
-	cursor: pointer;
-	margin: 0 2px;
-	border-radius: 10px;
-	font-family: Verdana;
-}
-
-.pagination li:hover {
-	background-color: black;
-	border: solid;
-	border-color: white;
-	color: white;
-}
-
-.pagination ul {
-	padding: 0px;
-	overflow: hidden;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 300px;
-}
-
-.list-of-posts {
+.list-of-posts
+{
 	min-height: 350px;
 }
 
