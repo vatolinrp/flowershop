@@ -419,59 +419,6 @@ html, body {
     padding-left: 80px;
 }
 
-.flower1 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower1.png');
-}
-
-.flower2 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower2.png');
-}
-
-.flower3 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower3.png');
-}
-
-.flower4 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower4.png');
-}
-
-.flower5 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower5.png');
-}
-
-.flower6 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower6.png');
-}
-
-.flower7 {
-	float: left;
-	width: 80px;
-	height: 80px;
-	background-image: url('../images/flower7.png');
-}
-.flower8 {
-	float: left;
-	width: 80px;
-	height: 80px;
-}
 #bouquet-wrapper {
 	background-image: url('../images/back.png');
 	width: 400px;

@@ -37,6 +37,16 @@
 									placeholder="Belarus, Minsk, Bogdanovicha street, 20 house, 10 ap" />
 							</div>
 						</div>
+						<div class="input-component">
+							<div class="component-name">
+								<spring:message code="admin.order.cost" />
+							</div>
+							<div class="content-component">
+								<form:textarea id="address-input" rows="5" cols="50"
+									path="placement"
+									placeholder="cost will be here" />
+							</div>
+						</div>
 
 						<input type="submit" id="save-btn"
 							value="<spring:message code="admin.btn.view" />">
@@ -69,51 +79,7 @@
   </div>
 </div>
   <div id="columns" class="result">
-  	<div class="flower-wrapper">
-  		<div class="flower-id">1: 10 000 Br</div>
-	    <div class="column" draggable="true">
-	     	<div class="flower1"></div>
-	    </div>
-    </div>
-    <div class="flower-wrapper">
-	    <div class="flower-id">2: 20 000 Br</div>
-	    <div class="column" draggable="true">
-	       <div class="flower2"></div>
-	    </div>
-    </div>
-    <div class="flower-wrapper">
-	    <div class="flower-id">3: 30 000 Br</div>
-	    <div class="column" draggable="true">
-	      <div class="flower3"></div>
-	    </div>
-	</div>
-	<div class="flower-wrapper">
-	    <div class="flower-id">4: 40 000 Br</div>
-	    <div class="column" draggable="true">
-	      <div class="flower4"></div>
-	    </div>
-    </div>
-    <div class="flower-wrapper">
-	    <div class="flower-id">5: 50 000 Br</div>
-	    <div class="column" draggable="true">
-	      <div class="flower5"></div>
-	    </div>
-    </div>
-    <div class="flower-wrapper">
-	    <div class="flower-id">6: 60 000 Br</div>
-	    <div class="column" draggable="true">
-	      <div class="flower6"></div>
-	    </div>
-    </div>
-    <div class="flower-wrapper">
-	    <div class="flower-id">7: 70 000 Br</div>
-	    <div class="column" draggable="true">
-	      <div class="flower7"></div>
-	    </div>
-    </div>
-    <div id="blank">
-      <div class="column" draggable="true"></div>
-    </div>
+  	${possible_flowers}
   </div>
   
   <input type="hidden" name="mouseTracker" id="mouseTracker">
