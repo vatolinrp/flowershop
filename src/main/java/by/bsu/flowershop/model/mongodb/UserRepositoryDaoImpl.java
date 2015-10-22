@@ -18,7 +18,7 @@ public class UserRepositoryDaoImpl extends CommonRepositoryDao implements UserRe
     {
         MongoDatabase mongoDatabase = getDatabase();
 
-        final FUser FUser = new FUser();
+        final FUser user = new FUser();
 
         FindIterable<Document> iterable = mongoDatabase.getCollection("USERS").find(eq("LOGIN", username));
         iterable.forEach(new Block<Document>()
@@ -26,15 +26,15 @@ public class UserRepositoryDaoImpl extends CommonRepositoryDao implements UserRe
             @Override
             public void apply(final Document document)
             {
-                FUser.setName(document.getString("FIRSTNAME"));
-                FUser.setSurname(document.getString("LASTNAME"));
-                FUser.setPassword(document.getString("PASS"));
-                FUser.setUsername(document.getString("LOGIN"));
-                FUser.setId(document.getLong("USER_ID"));
-                FUser.setRole(document.getLong("ROLE"));
+                user.setName(document.getString("FIRSTNAME"));
+                user.setSurname(document.getString("LASTNAME"));
+                user.setPassword(document.getString("PASS"));
+                user.setUsername(document.getString("LOGIN"));
+                user.setId(document.getLong("USER_ID"));
+                user.setRole(document.getLong("ROLE"));
             }
         });
-        return FUser;
+        return user;
     }
 
 }
