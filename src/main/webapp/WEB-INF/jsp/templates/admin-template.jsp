@@ -23,6 +23,7 @@
 	<div class="wrapper">
 		<tiles:insertAttribute name="header" />
 		<div class="admin-content">
+			<tiles:insertAttribute name="menu" />
 			<tiles:insertAttribute name="body" />
 		</div>
 		<tiles:insertAttribute name="footer" />

@@ -6,18 +6,6 @@
 <tiles:insertDefinition name="adminTemplate">
 	<tiles:putAttribute name="body">
 		<div class="body">
-			<div id="menu-wrapper">
-					<div class="menu-element">
-						<spring:url value="/order-list" var="orderlistUrl"	htmlEscape="true" />
-						<a href="${orderlistUrl}">
-							<spring:message	code="admin.order.list" />
-						</a>
-					</div>
-					<div class="menu-element">
-						<c:url value="/j_spring_security_logout" var="logoutUrl" />
-						<a href="${logoutUrl}"><spring:message code="admin.logout" /></a>
-					</div>
-			</div>
 			<form:form method="post" action="order-list" commandName="deleteOrderTO">
 				<div class="list-options">
 					<div id="submit-btn">

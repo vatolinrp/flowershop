@@ -179,10 +179,16 @@ html, body {
 {
 	overflow:hidden
 }
-.list-options{
+.list-options
+{
 	overflow:hidden;
-	  width: 926px;
-  margin-left: 224px;
+	margin:10px;
+}
+.menu-link
+{
+	text-decoration: none;
+	font-family: Verdana;
+	color: whitesmoke;
 }
 .body {
 
