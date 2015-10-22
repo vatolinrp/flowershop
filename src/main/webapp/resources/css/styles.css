@@ -6,7 +6,6 @@ html, body {
 
 .wrapper
 {
-	height: inherit;
 	margin: auto;
 	overflow: hidden;
 	background-image: url('../images/bg.png');
