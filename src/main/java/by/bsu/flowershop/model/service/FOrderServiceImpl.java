@@ -59,4 +59,10 @@ public class FOrderServiceImpl implements FOrderService
         return orderDao.getById(orderId);
     }
 
+    @Override
+    public void delete(List<String> ids) throws ServiceException
+    {
+        orderDao.delete(ids);
+    }
+
 }

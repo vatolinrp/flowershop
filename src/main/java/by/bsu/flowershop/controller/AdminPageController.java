@@ -8,6 +8,7 @@ import by.bsu.flowershop.model.service.ServiceException;
 import by.bsu.flowershop.model.service.util.HtmlCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -65,4 +66,20 @@ public class AdminPageController
         }
         return "admin/order-view";
     }
+
+    @RequestMapping(value = "/order-list", method = RequestMethod.POST)
+    public String delete(@ModelAttribute("deleteOrderTO") ListFOrders orderList, Map<String, Object> model)
+    {
+        List<String> orderIds = orderList.getCheckedOrders();
+        try
+        {
+            orderService.delete(orderIds);
+        }
+        catch (ServiceException e)
+        {
+            return "admin/error-admin";
+        }
+        return orderList(model);
+    }
+
 }

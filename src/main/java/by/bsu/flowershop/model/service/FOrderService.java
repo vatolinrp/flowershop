@@ -13,4 +13,6 @@ public interface FOrderService
     List<FOrder> getAll() throws ServiceException;
 
     FOrder getById(String orderId) throws ServiceException;
+
+    void delete(List<String> ids) throws ServiceException;
 }

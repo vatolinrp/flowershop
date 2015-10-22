@@ -11,4 +11,6 @@ public interface FOrderDao
     List<FOrder> getAll();
 
     FOrder getById(String orderId);
+
+    void delete(List<String> ids);
 }

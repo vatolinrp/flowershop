@@ -94,4 +94,14 @@ public class FOrderDaoImpl extends CommonRepositoryDao implements FOrderDao
         return order;
     }
 
+    @Override
+    public void delete(List<String> ids)
+    {
+        MongoDatabase mongoDatabase = getDatabase();
+        for(String id:ids)
+        {
+            mongoDatabase.getCollection("ORDERS").deleteOne(eq("_id",new ObjectId(id)));
+        }
+    }
+
 }

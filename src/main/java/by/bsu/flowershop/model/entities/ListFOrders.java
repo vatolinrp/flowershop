@@ -1,5 +1,6 @@
 package by.bsu.flowershop.model.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListFOrders
@@ -15,6 +16,20 @@ public class ListFOrders
     public void setOrderTOList(List<FOrder> orderTOList)
     {
         this.orderTOList = orderTOList;
+    }
+
+    public List<String> getCheckedOrders()
+    {
+        List<String> orderIds = new ArrayList<String>();
+
+        for (FOrder order : getOrderTOList())
+        {
+            if (order.isCheck())
+            {
+                orderIds.add(order.getOrderId());
+            }
+        }
+        return orderIds;
     }
 
 }
