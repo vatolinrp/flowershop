@@ -1,5 +1,8 @@
 package by.bsu.flowershop.model.service;
 
+import by.bsu.flowershop.model.entities.FOrder;
+import by.bsu.flowershop.model.mongodb.FOrderDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,6 +11,9 @@ import java.util.List;
 @Service
 public class FOrderServiceImpl implements FOrderService
 {
+
+    @Autowired
+    private FOrderDao orderDao;
 
     @Override
     public Integer getCost(String flowers) throws ServiceException {
@@ -31,5 +37,11 @@ public class FOrderServiceImpl implements FOrderService
             }
         }
         return cost;
+    }
+
+    @Override
+    public void create(FOrder order) throws ServiceException
+    {
+        orderDao.create(order);
     }
 }

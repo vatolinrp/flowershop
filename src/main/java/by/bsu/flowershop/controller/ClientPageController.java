@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 
+import java.util.Date;
 import java.util.Map;
 
 @Controller
@@ -47,5 +48,23 @@ public class ClientPageController
         }
         model.put("fOrder", fOrder);
         return "client/confirm-order";
+    }
+
+    @RequestMapping(value = "/confirmed", method = RequestMethod.POST)
+    public String saveOrder(@ModelAttribute("fOrder") FOrder fOrder, Map<String, Object> model)
+    {
+        try
+        {
+            fOrder.setCreationDate(new Date());
+            fOrderService.create(fOrder);
+            model.put("message","Your order was successfully created. Expect a call");
+        }
+        catch (ServiceException e)
+        {
+            logRepositoryDao.setLogMessage(ExceptionUtils.getStackTrace(e));
+            return "client/error-client";
+        }
+
+        return "welcome";
     }
 }

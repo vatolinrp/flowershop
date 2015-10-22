@@ -7,7 +7,7 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-				<form:form method="post" action="/flower-shop/result-creation" commandName="fOrder">
+				<form:form method="post" action="/confirmed" commandName="fOrder">
 					<div id="editNews">
 						<div class="order-info">
 							<spring:message code="admin.order.name" />
