@@ -1,12 +1,15 @@
-(function($){
+(function($)
+{
     
-    $(document).ready(function(){
+    $(document).ready(function()
+    {
     
-        $(".pagination").customPaginate({
-        
-            itemsToPaginate : ".news-component"
-        
-        });
+        $(".pagination").customPaginate
+        (
+            {
+                itemsToPaginate : ".order-component"
+            }
+        );
     
     });
     
