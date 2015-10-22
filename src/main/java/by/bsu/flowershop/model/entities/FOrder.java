@@ -7,7 +7,7 @@ public class FOrder implements Serializable
 {
     private static final long serialVersionUID = -947971023161487557L;
     private String customerName;
-    private Long orderId;
+    private String orderId;
     private Long customerPhone;
     private Date creationDate;
     private boolean check;
@@ -114,12 +114,12 @@ public class FOrder implements Serializable
         this.customerName = customerName;
     }
 
-    public Long getOrderId()
+    public String getOrderId()
     {
         return orderId;
     }
 
-    public void setOrderId(Long orderId)
+    public void setOrderId(String orderId)
     {
         this.orderId = orderId;
     }
