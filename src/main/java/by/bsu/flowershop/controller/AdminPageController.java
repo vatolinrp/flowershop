@@ -20,6 +20,8 @@ public class AdminPageController
 {
     private ListFOrders deleteOrders;
 
+    @Autowired
+    private LogRepositoryDao logRepositoryDao;
 
     @Autowired
     private FOrderService orderService;
