@@ -47,8 +47,7 @@
 								<div class="checkbox">
 									<form:checkbox path="orderTOList[${status.index}].check" value="delete" />
 								</div>
-								<form:hidden path="orderTOList[${status.index}].orderId"
-									value="${listValue.orderId}" />
+								<form:hidden path="orderTOList[${status.index}].orderId" value="${listValue.orderId}" />
 								<div class="edit-link">
 									<spring:url value="/order-view/${listValue.orderId}"
 										var="viewUrl" htmlEscape="true" />
