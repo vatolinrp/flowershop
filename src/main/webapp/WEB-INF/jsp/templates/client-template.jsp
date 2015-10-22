@@ -64,7 +64,7 @@
 <![endif]-->
 </head>
 <body>
-	<div id="wrapper">
+	<div class="wrapper">
 		<tiles:insertAttribute name="header" />
 		<div id="admin-content">
 			<tiles:insertAttribute name="body" />

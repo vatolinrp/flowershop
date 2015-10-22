@@ -2,6 +2,7 @@ package by.bsu.flowershop.model.service;
 
 import by.bsu.flowershop.model.entities.FOrder;
 import by.bsu.flowershop.model.mongodb.FOrderDao;
+import by.bsu.flowershop.model.mongodb.LogRepositoryDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,8 @@ public class FOrderServiceImpl implements FOrderService
     private FOrderDao orderDao;
 
     @Override
-    public Integer getCost(String flowers) throws ServiceException {
+    public Integer getCost(String flowers) throws ServiceException
+    {
         String[] strings = flowers.split("#flower");
         int cost = 0;
         List<Integer> positions = new ArrayList<Integer>();
@@ -46,8 +48,15 @@ public class FOrderServiceImpl implements FOrderService
     }
 
     @Override
-    public List<FOrder> getAllOrders() throws ServiceException
+    public List<FOrder> getAll() throws ServiceException
     {
-        return orderDao.getAllOrders();
+        return orderDao.getAll();
     }
+
+    @Override
+    public FOrder getById(String orderId) throws ServiceException
+    {
+        return orderDao.getById(orderId);
+    }
+
 }

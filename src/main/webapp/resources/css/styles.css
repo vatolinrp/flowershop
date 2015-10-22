@@ -4,10 +4,11 @@ html, body {
 	padding: 0;
 }
 
-#wrapper
+.wrapper
 {
 	height: inherit;
 	margin: auto;
+	overflow: hidden;
 	background-image: url('../images/bg.png');
 }
 
@@ -190,15 +191,15 @@ html, body {
 	float: left;
   margin-left: 20px;
 }
-#menu-wrapper {
+#menu-wrapper
+{
 	overflow: hidden;
-	width: 230px;
-	float: left;
 	margin-top: 15px;
   	margin-left: 20px;
 }
 
-#filter {
+#filter
+{
 	width: 500px;
 	margin-left: 170px;
 	margin-top: 20px;
@@ -213,8 +214,13 @@ html, body {
 	border-color: whitesmoke;
     border-style: solid;
 }
-
-.title-component {
+.order-view
+{
+	width: 400px;
+    margin: auto;
+}
+.title-component
+{
 	overflow: hidden;
 }
 
@@ -404,7 +410,8 @@ html, body {
 #bouquet {
 	overflow: hidden;
 	width: 240px;
-	padding: 75px;
+	padding: 60px;
+    padding-left: 80px;
 }
 
 .flower1 {
@@ -606,16 +613,16 @@ body {
 	margin: auto;
 }
 
-.footer-wrapper {
+.footer-wrapper
+{
 	height: 30px;
+	margin-top: 30px;
 }
 
 .order-info
 {
 	width: 200px;
 	margin: auto;
-	margin-left: 700px;
-    margin-top: 110px;
     font-family: Verdana;
     color: whitesmoke;
 }

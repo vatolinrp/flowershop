@@ -10,5 +10,7 @@ public interface FOrderService
 
     String create(FOrder fOrder) throws ServiceException;
 
-    List<FOrder> getAllOrders() throws ServiceException;
+    List<FOrder> getAll() throws ServiceException;
+
+    FOrder getById(String orderId) throws ServiceException;
 }

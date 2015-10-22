@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static com.mongodb.client.model.Filters.eq;
+
 @Repository
 public class FOrderDaoImpl extends CommonRepositoryDao implements FOrderDao
 {
@@ -39,13 +41,10 @@ public class FOrderDaoImpl extends CommonRepositoryDao implements FOrderDao
     }
 
     @Override
-    public List<FOrder> getAllOrders()
+    public List<FOrder> getAll()
     {
         final List<FOrder> list = new ArrayList<FOrder>();
         MongoDatabase mongoDatabase = getDatabase();
-
-
-
         FindIterable<Document> iterable = mongoDatabase.getCollection("ORDERS").find();
         iterable.forEach(new Block<Document>()
         {
@@ -59,9 +58,40 @@ public class FOrderDaoImpl extends CommonRepositoryDao implements FOrderDao
                 order.setPlacement(document.getString("PLACEMENT"));
                 order.setCost(document.getInteger("COST"));
                 order.setAddress(document.getString("ADDRESS"));
+                ObjectId id = (ObjectId)document.get( "_id" );
+                order.setOrderId(id.toString());
                 list.add(order);
             }
         });
         return list;
     }
+
+    @Override
+    public FOrder getById(final String orderId)
+    {
+        MongoDatabase mongoDatabase = getDatabase();
+
+        final FOrder order = new FOrder();
+        FindIterable<Document> iterable = mongoDatabase.getCollection("ORDERS").find();
+        iterable.forEach(new Block<Document>()
+        {
+            @Override
+            public void apply(final Document document)
+            {
+                ObjectId id = (ObjectId)document.get( "_id" );
+                if((id.toString()).equals(orderId))
+                {
+                    order.setCustomerName(document.getString("CUSTOMER_NAME"));
+                    order.setCustomerPhone(document.getLong("CUSTOMER_PHONE"));
+                    order.setCreationDate(document.getDate("CREATION_DATE"));
+                    order.setPlacement(document.getString("PLACEMENT"));
+                    order.setCost(document.getInteger("COST"));
+                    order.setAddress(document.getString("ADDRESS"));
+                    order.setOrderId(id.toString());
+                }
+            }
+        });
+        return order;
+    }
+
 }

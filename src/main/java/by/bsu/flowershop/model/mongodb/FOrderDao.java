@@ -8,5 +8,7 @@ public interface FOrderDao
 {
     String create(FOrder order);
 
-    List<FOrder> getAllOrders();
+    List<FOrder> getAll();
+
+    FOrder getById(String orderId);
 }
