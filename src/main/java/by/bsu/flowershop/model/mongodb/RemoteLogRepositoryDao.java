@@ -1,8 +1,8 @@
-package by.bsu.flowershop.mongodb.repositories;
+package by.bsu.flowershop.model.mongodb;
 
 import java.util.List;
 
-public interface LogRepositoryDao
+public interface RemoteLogRepositoryDao
 {
     void setLogMessage(String message);
 

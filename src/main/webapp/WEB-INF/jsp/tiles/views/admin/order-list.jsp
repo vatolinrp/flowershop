@@ -6,9 +6,6 @@
 <tiles:insertDefinition name="adminTemplate">
 	<tiles:putAttribute name="body">
 		<div class="body">
-
-			success!
-
 		</div>
 	</tiles:putAttribute>
 </tiles:insertDefinition>

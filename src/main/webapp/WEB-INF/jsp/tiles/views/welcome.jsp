@@ -1,8 +1,8 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<tiles:insertDefinition name="loginTemplate">
-	<tiles:putAttribute name="login">
+<tiles:insertDefinition name="clientTemplate">
+	<tiles:putAttribute name="body">
 		<div class="content-wrapper">
 			<div class="welcome-page">
 				<div class="welcome-div">

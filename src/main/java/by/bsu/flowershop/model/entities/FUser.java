@@ -1,6 +1,6 @@
-package by.bsu.flowershop.mongodb.domain;
+package by.bsu.flowershop.model.entities;
 
-public class User
+public class FUser
 {
 
     private Long id;
@@ -10,12 +10,12 @@ public class User
     private String password;
     private Long role;
 
-    public User()
+    public FUser()
     {
         super();
     }
 
-    public User(Long id, String name, String surname, String username, String password, Long role)
+    public FUser(Long id, String name, String surname, String username, String password, Long role)
     {
         super();
         this.id = id;
@@ -89,7 +89,7 @@ public class User
     @Override
     public String toString()
     {
-        return "User{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", surname='" + surname + '\''
+        return "FUser{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", surname='" + surname + '\''
                 + ", username='" + username + '\'' + ", password='" + password + '\'' + ", role=" + role + '}';
     }
 }
