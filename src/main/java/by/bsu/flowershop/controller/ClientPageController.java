@@ -2,7 +2,6 @@ package by.bsu.flowershop.controller;
 
 import by.bsu.flowershop.model.entities.FFlower;
 import by.bsu.flowershop.model.entities.FOrder;
-import by.bsu.flowershop.model.mongodb.LogRepositoryDao;
 import by.bsu.flowershop.model.service.FFlowerService;
 import by.bsu.flowershop.model.service.FOrderService;
 import by.bsu.flowershop.model.service.ServiceException;
@@ -22,9 +21,6 @@ import java.util.Map;
 @Controller
 public class ClientPageController
 {
-    @Autowired
-    private LogRepositoryDao logRepositoryDao;
-
     @Autowired
     private FOrderService fOrderService;
 
@@ -51,7 +47,6 @@ public class ClientPageController
         }
         catch (ServiceException e)
         {
-            logRepositoryDao.setLogMessage(ExceptionUtils.getStackTrace(e));
             return "client/client-error";
         }
         model.put("fOrder", fOrder);
@@ -69,7 +64,6 @@ public class ClientPageController
         }
         catch (ServiceException e)
         {
-            logRepositoryDao.setLogMessage(ExceptionUtils.getStackTrace(e));
             return "client/error-client";
         }
 

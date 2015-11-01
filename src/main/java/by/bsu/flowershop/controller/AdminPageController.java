@@ -2,7 +2,6 @@ package by.bsu.flowershop.controller;
 
 import by.bsu.flowershop.model.entities.FOrder;
 import by.bsu.flowershop.model.entities.ListFOrders;
-import by.bsu.flowershop.model.mongodb.LogRepositoryDao;
 import by.bsu.flowershop.model.service.FOrderService;
 import by.bsu.flowershop.model.service.ServiceException;
 import by.bsu.flowershop.model.service.util.HtmlCreator;
@@ -22,13 +21,7 @@ public class AdminPageController
     private ListFOrders deleteOrders;
 
     @Autowired
-    private LogRepositoryDao logRepositoryDao;
-
-    @Autowired
     private FOrderService orderService;
-
-    @Autowired
-    private LogRepositoryDao logger;
 
     @RequestMapping(value = { "/order-list" }, method = RequestMethod.GET)
     public String orderList(Map<String, Object> model)
@@ -55,7 +48,6 @@ public class AdminPageController
         try
         {
             order = orderService.getById(orderId);
-            logger.setLogMessage(order.toString());
             order.setCost(orderService.getCost(order.getPlacement()));
             model.put("positions", HtmlCreator.getHTMLPositions(order.getPlacement()));
             model.put("order", order);
