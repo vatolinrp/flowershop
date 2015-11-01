@@ -42,7 +42,7 @@
 								<spring:message code="admin.order.cost" />
 							</div>
 							<div class="content-component">
-								<form:textarea id="address-input" rows="5" cols="50"
+								<form:input id="address-input" rows="5" cols="50"
 									path="placement"
 									placeholder="cost will be here" />
 							</div>
@@ -51,7 +51,7 @@
 						<input type="submit" id="save-btn"
 							value="<spring:message code="admin.btn.view" />">
 					</div>
-					<form:input type="hidden" path="placement" style="width: 300px; text-align: center;"/>
+					<!-- <form:input type="hidden" path="placement" style="width: 300px; text-align: center;"/> -->
 				</form:form>
 				<div id="bouquet-wrapper">
   <div id="bouquet">

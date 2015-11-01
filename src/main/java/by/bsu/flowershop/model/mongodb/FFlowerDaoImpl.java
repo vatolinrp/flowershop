@@ -31,6 +31,7 @@ public class FFlowerDaoImpl extends CommonRepositoryDao implements FFlowerDao
                 flower.setCost(document.getLong("COST"));
                 flower.setInfo(document.getString("INFO"));
                 flower.setImgUrl(document.getString("IMG_URL"));
+                flower.setFlowerCode(document.getString("CODE"));
                 ObjectId id = (ObjectId)document.get( "_id" );
                 flower.setId(id.toString());
                 list.add(flower);

@@ -23,7 +23,7 @@ public class HtmlCreator
             String str = "<div class=flower-wrapper>" +
                     "  <div class=flower-id>"+ (i+1) +": " + list.get(i).getCost() + " Br</div>" +
                     "    <div class=column draggable=true>" +
-                    "     <div style=#></div>" +
+                    "     <div style=# class=" + list.get(i).getFlowerCode() + "></div>" +
                     "    </div>" +
                     "    </div>";
             styleForInsert = style.replaceFirst("#", list.get(i).getImgUrl());
