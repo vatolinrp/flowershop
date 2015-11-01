@@ -21,7 +21,7 @@ public class HtmlCreator
         for(int i=0; i<list.size();i++)
         {
             String str = "<div class=flower-wrapper>" +
-                    "  <div class=flower-id>"+ (i+1) +": " + list.get(i).getCost() + " Br</div>" +
+                    "  <div class=flower-cost>" + list.get(i).getCost() + "</div>" +
                     "    <div class=column draggable=true>" +
                     "     <div style=# class=" + list.get(i).getFlowerCode() + "></div>" +
                     "    </div>" +

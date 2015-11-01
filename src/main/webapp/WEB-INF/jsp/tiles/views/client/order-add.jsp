@@ -43,8 +43,18 @@
 							</div>
 							<div class="content-component">
 								<form:input id="address-input" rows="5" cols="50"
-									path="placement"
+									path="cost"
 									placeholder="cost will be here" />
+							</div>
+						</div>
+						<div class="input-component">
+							<div class="component-name">
+								bouquet code (temporary)
+							</div>
+							<div class="content-component">
+								<form:input id="address-input" rows="5" cols="50"
+									path="placement"
+									placeholder="placement will be here" />
 							</div>
 						</div>
 

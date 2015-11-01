@@ -76,6 +76,7 @@
         flowers = flowers + "#" + flower;
       });
       $("input[name=placement]").val(flowers);
+      $("input[name=cost]").val(flowers);
   }
 
 
