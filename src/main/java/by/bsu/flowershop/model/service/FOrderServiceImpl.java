@@ -2,7 +2,6 @@ package by.bsu.flowershop.model.service;
 
 import by.bsu.flowershop.model.entities.FOrder;
 import by.bsu.flowershop.model.mongodb.FOrderDao;
-import by.bsu.flowershop.model.mongodb.LogRepositoryDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

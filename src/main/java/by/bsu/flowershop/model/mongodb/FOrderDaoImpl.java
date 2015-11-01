@@ -7,7 +7,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -19,8 +18,6 @@ import static com.mongodb.client.model.Filters.eq;
 @Repository
 public class FOrderDaoImpl extends CommonRepositoryDao implements FOrderDao
 {
-    @Autowired
-    private LogRepositoryDao logRepositoryDao;
 
     @Override
     public String create(FOrder order)
