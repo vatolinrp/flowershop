@@ -66,17 +66,31 @@
       return false;
   }
 
-  function resultToInput() {
-      var flowers = "";
-      $("#bouquet .column").each(function() {
-        var flower = $(this).children('div').attr('class');
-        if (flower == undefined) {
-          flower = "flower8";
-        }
-        flowers = flowers + "#" + flower;
-      });
-      $("input[name=placement]").val(flowers);
-      $("input[name=cost]").val(flowers);
-  }
+
+function getPrice() {
+  var finalPrice = "";
+  $("#bouquet .column").each(function(index, el) {
+    var flowerId = $(this).find('div').attr("class");
+    if (flowerId !== undefined) {
+      var flowerPrice = $("."+flowerId).parents(".flower-wrapper").find('.flower-cost').text();
+      finalPrice = Number(flowerPrice) + Number(finalPrice);
+    }
+  });
+  return finalPrice;
+}
 
 
+
+function resultToInput() {
+    var flowers = "";
+    $("#bouquet .column").each(function() {
+      var flower = $(this).children('div').attr('class');
+      if (flower == undefined) {
+        flower = "flower8";
+      }
+      flowers = flowers + "#" + flower;
+    });
+
+    $("input[name=placement]").val(flowers);
+    $("input[name=cost]").val(getPrice());
+}
