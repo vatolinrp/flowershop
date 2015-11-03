@@ -46,7 +46,7 @@
 							</div>
 						</div>
 						<input type="submit" id="save-btn"
-							value="<spring:message code="admin.btn.view" />">
+							value="<spring:message code="btn.confirm" />">
 					</div>
 					<form:input type="hidden" path="placement"/>
 				</form:form>
