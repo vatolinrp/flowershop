@@ -7,7 +7,7 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/create-order" commandName="fOrder" style="float: left;">
+				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/save-order" commandName="order" style="float: left;">
 					<div id="editNews">
 						<div class="input-component">
 							<div class="component-name">
@@ -42,26 +42,13 @@
 								<spring:message code="admin.order.cost" />
 							</div>
 							<div class="content-component">
-								<form:input id="address-input" rows="5" cols="50"
-									path="cost"
-									placeholder="cost will be here" />
+								<form:input id="cost-input"	path="cost"	placeholder="cost will be here" />
 							</div>
 						</div>
-						<div class="input-component">
-							<div class="component-name">
-								bouquet code (temporary)
-							</div>
-							<div class="content-component">
-								<form:input id="address-input" rows="5" cols="50"
-									path="placement"
-									placeholder="placement will be here" />
-							</div>
-						</div>
-
 						<input type="submit" id="save-btn"
 							value="<spring:message code="admin.btn.view" />">
 					</div>
-					<!-- <form:input type="hidden" path="placement" style="width: 300px; text-align: center;"/> -->
+					<form:input type="hidden" path="placement"/>
 				</form:form>
 				<div id="bouquet-wrapper">
   <div id="bouquet">

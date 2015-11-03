@@ -22,7 +22,7 @@ import java.util.Map;
 public class ClientPageController
 {
     @Autowired
-    private FOrderService fOrderService;
+    private FOrderService orderService;
 
     @Autowired
     private FFlowerService flowerService;
@@ -30,36 +30,20 @@ public class ClientPageController
     @RequestMapping(value = "/create-by-yourself", method = RequestMethod.GET)
     public String clearFields(Map<String, Object> model)
     {
-        FOrder fOrder = new FOrder();
+        FOrder order = new FOrder();
         List<FFlower> list = flowerService.getAllTypes();
-        model.put("possible_flowers",HtmlCreator.getPossibleFlowers(list));
-        model.put("fOrder", fOrder);
+        model.put("possible_flowers", HtmlCreator.getPossibleFlowers(list));
+        model.put("order", order);
         return "client/order-add";
     }
 
-    @RequestMapping(value = "/create-order", method = RequestMethod.POST)
-    public String createOrder(@ModelAttribute("fOrder") FOrder fOrder, Map<String, Object> model)
+    @RequestMapping(value = "/save-order", method = RequestMethod.POST)
+    public String saveOrder(@ModelAttribute("order") FOrder order, Map<String, Object> model)
     {
         try
         {
-            fOrder.setCost(fOrderService.getCost(fOrder.getPlacement()));
-            model.put("positions", HtmlCreator.getHTMLPositions(fOrder.getPlacement()));
-        }
-        catch (ServiceException e)
-        {
-            return "client/client-error";
-        }
-        model.put("fOrder", fOrder);
-        return "client/confirm-order";
-    }
-
-    @RequestMapping(value = "/confirmed", method = RequestMethod.POST)
-    public String saveOrder(@ModelAttribute("fOrder") FOrder fOrder, Map<String, Object> model)
-    {
-        try
-        {
-            fOrder.setCreationDate(new Date());
-            fOrderService.create(fOrder);
+            order.setCreationDate(new Date());
+            orderService.create(order);
             model.put("message","Your order was successfully created. Expect a call");
         }
         catch (ServiceException e)

@@ -48,7 +48,6 @@ public class AdminPageController
         try
         {
             order = orderService.getById(orderId);
-            order.setCost(orderService.getCost(order.getPlacement()));
             model.put("positions", HtmlCreator.getHTMLPositions(order.getPlacement()));
             model.put("order", order);
         }

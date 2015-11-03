@@ -334,7 +334,10 @@ html, body {
 #phone-input {
 	width: 250px;
 }
-
+#cost-input
+{
+	width: 250px;
+}
 #content-input {
 	height: 200px;
 	width: 600px;

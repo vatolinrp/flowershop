@@ -6,8 +6,6 @@ import java.util.List;
 
 public interface FOrderService
 {
-    Integer getCost(String flowers) throws ServiceException;
-
     String create(FOrder fOrder) throws ServiceException;
 
     List<FOrder> getAll() throws ServiceException;
