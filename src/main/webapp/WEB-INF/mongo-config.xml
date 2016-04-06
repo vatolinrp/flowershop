@@ -6,9 +6,9 @@
         http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
 
 
-    <mongo:mongo host="127.6.49.4" port="27017"/>
+    <mongo:mongo host="${mongodb.host}" port="${mongodb.port}"/>
 
-    <mongo:db-factory dbname="flowers"/>
+    <mongo:db-factory dbname="${mongodb.dbname}"/>
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>

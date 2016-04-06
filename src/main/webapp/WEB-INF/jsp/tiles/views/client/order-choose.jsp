@@ -7,10 +7,8 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-				<form:form method="post" action="/flower-shop/display-generated"
-					commandName="generateVO">
-					<div class="set-money">Please enter the amount of money you
-						want to spend</div>
+				<form:form method="post" action="/flower-shop/display-generated" commandName="generateVO">
+					<div class="set-money">Please enter the amount of money you	want to spend</div>
 					<form:input type="number" path="cost" />
 					<div class="set-flowers">Please choose flowers you want to
 						have in your bouquet</div>

@@ -12,7 +12,9 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
     <context:annotation-config/>
     <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <context:component-scan base-package="by.bsu"/>
+    <context:property-placeholder location="classpath:database.properties"/>
+    <context:property-placeholder location="classpath:log4j.properties"/>
+    <context:component-scan base-package="by.bsu.flowershop"/>
     <mvc:annotation-driven/>
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
