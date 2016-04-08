@@ -21,7 +21,6 @@ public class OrderDaoTest extends AbstractTestNGSpringContextTests
   public void getCreateDeleteTest()
   {
     List<Order> before = orderDao.getAll();
-    Assert.assertEquals( before.size(),9 );
 
     Order order = new Order();
     order.setAddress( "test" );
@@ -33,7 +32,7 @@ public class OrderDaoTest extends AbstractTestNGSpringContextTests
 
     orderDao.create( order );
     List<Order> afterCreation = orderDao.getAll();
-    Assert.assertEquals( afterCreation.size(), 10 );
+    Assert.assertEquals( afterCreation.size(), before.size() + 1 );
     afterCreation.removeAll( before );
     Assert.assertEquals( afterCreation.size(), 1 );
     String generatedId = afterCreation.get( 0 ).getOrderId();
@@ -50,7 +49,6 @@ public class OrderDaoTest extends AbstractTestNGSpringContextTests
   public void getHistoryByPhoneTest()
   {
     List<Order> before = orderDao.getHistoryByPhone( 88888888888L );
-    Assert.assertEquals( before.size(), 5 );
     Order order = new Order();
     order.setAddress( "test" );
     order.setCost( 100 );
@@ -69,5 +67,12 @@ public class OrderDaoTest extends AbstractTestNGSpringContextTests
     Assert.assertEquals( afterDelete.size(),before.size() + 1 );
     orderDao.deleteCompletely( Arrays.asList( generatedId ) );
     Assert.assertEquals( orderDao.getHistoryByPhone( 88888888888L ).size(), before.size() );
+  }
+
+  @Test
+  public void getById()
+  {
+    List<Order> oreds = orderDao.getHistoryByPhone(87878787878L);
+    int i = 0+1+1+1;
   }
 }

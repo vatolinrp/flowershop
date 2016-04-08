@@ -16,7 +16,7 @@
     </http>
 
     <authentication-manager>
-        <authentication-provider user-service-ref="mongoUserDetailsService">
+        <authentication-provider user-service-ref="userDetailsService">
         </authentication-provider>
     </authentication-manager>
 </beans:beans>

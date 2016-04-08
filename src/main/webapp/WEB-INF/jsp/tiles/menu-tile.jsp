@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div id="menu-wrapper">
 	<div class="menu-element">
-		<spring:url value="/order-list" var="orderlistUrl"	htmlEscape="true" />
+		<spring:url value="/order-list" var="orderlistUrl" htmlEscape="true" />
 		<a class="menu-link" href="${orderlistUrl}">
 			<spring:message code="admin.order.list" />
 		</a>

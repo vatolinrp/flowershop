@@ -7,7 +7,8 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/save-order" commandName="order" style="float: left;">
+				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')"
+				 action="/flowers-1.0/save-order" commandName="order" style="float: left;">
 					<div id="editNews">
 						<div class="input-component">
 							<div class="component-name">
@@ -42,7 +43,7 @@
 								<spring:message code="admin.order.cost" />
 							</div>
 							<div class="content-component">
-								<form:input id="cost-input"	path="cost"	placeholder="cost will be here" />
+								<form:input id="cost-input"	path="cost"	placeholder="cost will be here" readonly="readonly" />
 							</div>
 						</div>
 						<input type="submit" id="save-btn"
@@ -51,40 +52,15 @@
 					<form:input type="hidden" path="placement"/>
 				</form:form>
 				<div id="bouquet-wrapper">
-  <div id="bouquet">
-    <div class="destination" style="overflow: hidden;">
-      <div id="columns">
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-      </div>
-    </div>
-    <div class="destination" style="overflow: hidden;">
-      <div id="columns">
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-      </div>
-    </div>
-    <div class="destination" style="overflow: hidden;">
-      <div id="columns">
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-        <div class="column" draggable="true"></div>
-      </div>
-    </div>
-  </div>
-</div>
+                    ${dynamicBouquet}
+                </div>
   <div id="columns" class="result">
   	${possible_flowers}
   </div>
-  
   <input type="hidden" name="mouseTracker" id="mouseTracker">
 				
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="<c:url value="/resources/js/choose.js" />"></script>
-
-
 
 			</div>
 		</div>

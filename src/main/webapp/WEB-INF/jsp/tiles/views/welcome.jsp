@@ -6,10 +6,10 @@
 		<div class="content-wrapper">
 			<div class="welcome-page">
 				<div class="welcome-div">
-					<a class="welcome-link" href="/create-by-yourself" ><spring:message code="client.create.by.yourself" /></a>
+					<a class="welcome-link" href="/flowers-1.0/create-by-yourself" ><spring:message code="client.create.by.yourself" /></a>
 				</div>
 				<div class="welcome-div">
-					<a class="welcome-link" href="/flower-shop/create-by-choosing" ><spring:message code="client.create.by.generator" /></a>
+					<a class="welcome-link" href="/flowers-1.0/create-by-choosing" ><spring:message code="client.create.by.generator" /></a>
 				</div>
 			</div>
 			<div class="content">

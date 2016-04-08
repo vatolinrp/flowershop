@@ -5,7 +5,7 @@
      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
 
-    <display-name>flower-shop</display-name>
+    <display-name>flowers</display-name>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>

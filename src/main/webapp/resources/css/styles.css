@@ -6,6 +6,7 @@ html, body {
 
 .wrapper
 {
+    min-height: 800px;
 	margin: auto;
 	overflow: hidden;
 	background-image: url('../images/bg.png');
@@ -354,11 +355,14 @@ html, body {
 	margin: auto;
 	overflow: hidden;
 }
-
+input[type=text], textarea, input[type=password]
+{
+    width:170px;
+}
 #save-btn {
 	float: right;
 	margin-right: 15px;
-	width: 100px;
+	width: 110px;
 	height: 40px;
 	margin-bottom: 200px;
 	font-family: Verdana;
@@ -616,12 +620,11 @@ input[type=password]
 	font-size: 10px;
   	text-align: center;
 }
-.set-money{
-	font-family: Verdana;
-  background-color: white;
-  width: 210px;
-  border-radius: 10px;
+.set-phone
+{
+  font-family: Verdana;
   margin: auto;
+  margin-bottom: 10px;
 }
 .set-flowers{
 	font-family: Verdana;

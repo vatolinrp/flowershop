@@ -7,36 +7,51 @@
 	<tiles:putAttribute name="body">
 		<div class="body-client">
 			<div id="news-add-edit-wrapper">
-				<form:form method="post" action="/confirmed" commandName="fOrder">
+				<form:form method="post" name="OrderForm" onsubmit="return validateForm('${pageContext.response.locale.language}')" action="/flowers-1.0/save-order" commandName="order" style="float: left;">
 					<div id="editNews">
-						<div class="order-info">
-							<spring:message code="admin.order.name" />
-							${fOrder.customerName}
-							<br />
-							<spring:message code="admin.order.phone" />
-							${fOrder.customerPhone}
-							<br />
-							<spring:message code="admin.order.address" />
-							${fOrder.address}
-							<br />
-							<spring:message code="admin.order.price" />
-							${fOrder.cost} <br />
-						</div>
-						<div id="bouquet-wrapper-ready">
-							<div id="bouquet">
-								"${positions}"
+						<div class="input-component">
+							<div class="component-name">
+								<spring:message code="admin.customer.name" />
+							</div>
+							<div class="content-component">
+								<form:input path="customerName" id="name-input"
+									placeholder="Ivanov Ivan Ivanovich" />
 							</div>
 						</div>
-
-						<form:hidden path="customerName" value="${fOrder.customerName}"/>
-						<form:hidden path="customerPhone" value="${fOrder.customerPhone}"/>
-						<form:hidden path="cost" value="${fOrder.cost}"/>
-						<form:hidden path="placement" value="${fOrder.placement}"/>
-						<form:hidden path="address" value="${fOrder.address}"/>
-						<input type="submit" id="create-btn"
-							value="<spring:message code="btn.confirm" />">
+						<div class="input-component">
+							<div class="component-name">
+								<spring:message code="admin.customer.phone" />
+							</div>
+							<div class="content-component">
+								<form:input path="customerPhone" id="phone-input"
+									placeholder="8###########" />
+							</div>
+						</div>
+						<div class="input-component">
+							<div class="component-name">
+								<spring:message code="admin.order.address" />
+							</div>
+							<div class="content-component">
+								<form:textarea id="address-input" rows="5" cols="50"
+									path="address"
+									placeholder="Belarus, Minsk, Bogdanovicha street, 20 house, 10 ap" />
+							</div>
+						</div>
+						<div class="input-component">
+							<div class="component-name">
+								<spring:message code="admin.order.cost" />
+							</div>
+							<div class="content-component">
+								<form:input id="cost-input"	path="cost"	placeholder="cost will be here" />
+							</div>
+						</div>
+						<input type="submit" id="save-btn" value="<spring:message code="btn.confirm" />">
 					</div>
+					<form:input type="hidden" path="placement"/>
 				</form:form>
+                <div id="bouquet-wrapper-ready">
+                	<div id="bouquet">"${htmlPlacement}"</div>
+                </div>
 			</div>
 		</div>
 	</tiles:putAttribute>

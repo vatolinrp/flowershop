@@ -2,6 +2,7 @@ package by.bsu.flowershop.dao.impl;
 
 import by.bsu.flowershop.dao.OrderDao;
 import by.bsu.flowershop.model.Order;
+import by.bsu.flowershop.model.TopRated;
 import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
 import com.mongodb.client.FindIterable;
@@ -68,7 +69,8 @@ public class OrderDaoImpl extends CommonRepositoryDao implements OrderDao
     MongoDatabase mongoDatabase = getDatabase();
 
     final Order order = new Order();
-    FindIterable<Document> iterable = mongoDatabase.getCollection( "ORDERS" ).find( new BasicDBObject( "_id", orderId ) );
+    FindIterable<Document> iterable = mongoDatabase.getCollection( "ORDERS" ).find(
+      new BasicDBObject( "_id", new ObjectId( orderId ) ) );
     iterable.forEach( new Block<Document>()
       {
         @Override
@@ -132,5 +134,78 @@ public class OrderDaoImpl extends CommonRepositoryDao implements OrderDao
       }
     });
     return list;
+  }
+
+  @Override
+  public List<TopRated> getTopRated( final String celebrationType )
+  {
+    final List<TopRated> list = new ArrayList<TopRated>();
+    MongoDatabase mongoDatabase = getDatabase();
+    FindIterable<Document> iterable = mongoDatabase.getCollection( celebrationType ).find();
+    iterable.forEach( new Block<Document>()
+    {
+      @Override
+      public void apply( final Document document )
+      {
+        TopRated topRated = new TopRated();
+        topRated.setPlacement( document.getString( "PLACEMENT" ) );
+        topRated.setCost( document.getInteger( "COST" ) );
+        topRated.setCelebrationType( celebrationType );
+        ObjectId id = ( ObjectId )document.get( "_id" );
+        topRated.setTrId( id.toString() );
+        list.add( topRated );
+      }
+    });
+    return list;
+  }
+
+  @Override
+  public String getPlacementFromTopRated( String id )
+  {
+    MongoDatabase mongoDatabase = getDatabase();
+    final String[] placement = new String[1];
+    FindIterable<Document> iterable = mongoDatabase.getCollection( "VALENTINES_DAY" ).find(
+      new BasicDBObject( "_id", new ObjectId( id ) ) );
+    iterable.forEach( new Block<Document>()
+    {
+      @Override
+      public void apply( final Document document )
+      {
+        placement[0] =  document.getString( "PLACEMENT" );
+      }
+    });
+    if( placement[0] != null )
+    {
+      return placement[0];
+    }
+    iterable = mongoDatabase.getCollection( "MOTHERS_DAY" ).find(
+        new BasicDBObject( "_id", new ObjectId( id ) ) );
+    iterable.forEach( new Block<Document>()
+    {
+      @Override
+      public void apply( final Document document )
+      {
+        placement[0] =  document.getString( "PLACEMENT" );
+      }
+    });
+    if( placement[0] != null )
+    {
+      return placement[0];
+    }
+    iterable = mongoDatabase.getCollection( "WOMENS_DAY" ).find(
+        new BasicDBObject( "_id", new ObjectId( id ) ) );
+    iterable.forEach( new Block<Document>()
+    {
+      @Override
+      public void apply( final Document document )
+      {
+        placement[0] =  document.getString( "PLACEMENT" );
+      }
+    });
+    if( placement[0] != null )
+    {
+      return placement[0];
+    }
+    return null;
   }
 }
