@@ -11,6 +11,9 @@
 				<div class="welcome-div">
 					<a class="welcome-link" href="/flowers-1.0/create-by-choosing" ><spring:message code="client.create.by.generator" /></a>
 				</div>
+                <div class="welcome-div">
+                    <a class="welcome-link" href="/flowers-1.0/create-by-quest" ><spring:message code="client.create.by.quest" /></a>
+                </div>
 			</div>
 			<div class="content">
 				<div class="login">

@@ -73,11 +73,18 @@ public class ClientPageController
   }
 
   @RequestMapping( value = "/create-by-choosing", method = RequestMethod.GET )
-  public String clearVariety( Map<String,Object> model )
+  public String createByChoosing( Map<String,Object> model )
   {
-    logger.info( "creating new ChoiceVO object..." );
+    logger.info( "create by choosing..." );
     model.put( "choiceVO", new ChoiceVO() );
     return "client/order-choose";
+  }
+
+  @RequestMapping( value = "/create-by-quest", method = RequestMethod.GET )
+  public String createByQuest( Map<String,Object> model )
+  {
+    logger.info( "create by quest..." );
+    return "client/order-quest";
   }
 
   @RequestMapping( value = "/order-chosen/{placementId}", method = RequestMethod.GET )

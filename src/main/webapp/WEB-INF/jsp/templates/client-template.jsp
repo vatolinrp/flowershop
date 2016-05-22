@@ -14,6 +14,10 @@
 <script src="<c:url value="/resources/js/checkbox.js" />"></script>
 <script src="<c:url value="/resources/js/paginate.js" />"></script>
 <script src="<c:url value="/resources/js/custom.js" />"></script>
+<script src="<c:url value="/resources/js/angular.min.js" />"></script>
+<script src="<c:url value="/resources/js/deductiveMachine.js" />"></script>
+<script src="<c:url value="/resources/js/knowledgeBase.js" />"></script>
+<script src="<c:url value="/resources/js/questionController.js" />"></script>
 <script>
 					function validateForm(lang) {
 					    var x = document.forms["OrderForm"]["customerName"].value;
