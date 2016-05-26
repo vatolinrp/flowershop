@@ -22,4 +22,6 @@ public interface OrderDao
   List<TopRated> getTopRated( String celebrationType );
 
   String getPlacementFromTopRated( String id );
+
+  String getPlacementFromQuiz( String id );
 }

@@ -99,7 +99,15 @@ public class OrderServiceImpl implements OrderService
       placement = orderDao.getPlacementFromTopRated( id );
       if( placement == null )
       {
-        throw new ServiceException( "could not find placement (" + id + ")" );
+        placement = orderDao.getPlacementFromQuiz( id );
+        if( placement == null)
+        {
+          throw new ServiceException( "could not find placement (" + id + ")" );
+        }
+        else
+        {
+          return placement;
+        }
       }
       else
       {

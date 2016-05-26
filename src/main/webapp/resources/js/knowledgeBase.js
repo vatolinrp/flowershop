@@ -5,7 +5,7 @@ var knowledgeBase = [{
 		to_whom: 'man'
 	},
 	answer: {
-		bouquet_id: 1
+		bouquet_id: '57471d195dd3a0d0d3f1604b'
 	}
 }, {
 	id: 2,
@@ -14,7 +14,7 @@ var knowledgeBase = [{
 		to_whom: 'woman'
 	},
 	answer: {
-		bouquet_id: 2
+		bouquet_id: '57471e1a5dd3a0d0d3f1604c'
 	}
 }, {
 	id: 3,
@@ -24,7 +24,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 3
+		bouquet_id: '57471ed05dd3a0d0d3f1604d'
 	}
 }, {
 	id: 4,
@@ -34,7 +34,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 4
+		bouquet_id: '574720055dd3a0d0d3f1604e'
 	}
 }, {
 	id: 5,
@@ -44,7 +44,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 5
+		bouquet_id: '574721d15dd3a0d0d3f1604f'
 	}
 }, {
 	id: 6,
@@ -54,7 +54,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 6
+		bouquet_id: '574722655dd3a0d0d3f16050'
 	}
 }, {
 	id: 7,
@@ -64,7 +64,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 7
+		bouquet_id: '574723345dd3a0d0d3f16051'
 	}
 }, {
 	id: 8,
@@ -74,7 +74,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 8
+		bouquet_id: '574723f95dd3a0d0d3f16052'
 	}
 }, {
 	id: 9,
@@ -84,7 +84,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 9
+		bouquet_id: '574725f95dd3a0d0d3f16053'
 	}
 }, {
 	id: 10,
@@ -94,7 +94,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 10
+		bouquet_id: '574726d35dd3a0d0d3f16054'
 	}
 }, {
 	id: 11,
@@ -104,7 +104,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 11
+		bouquet_id: '574727ac5dd3a0d0d3f16055'
 	}
 }, {
 	id: 12,
@@ -114,7 +114,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 12
+		bouquet_id: '5747284a5dd3a0d0d3f16056'
 	}
 }, {
 	id: 13,
@@ -124,7 +124,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 13
+		bouquet_id: '5747292f5dd3a0d0d3f16057'
 	}
 }, {
 	id: 14,
@@ -134,7 +134,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 14
+		bouquet_id: '57472a5d5dd3a0d0d3f16058'
 	}
 }, {
 	id: 15,
@@ -144,7 +144,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 15
+		bouquet_id: '57472afb5dd3a0d0d3f16059'
 	}
 }, {
 	id: 16,
@@ -154,7 +154,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 16
+		bouquet_id: '57472bdf5dd3a0d0d3f1605a'
 	}
 }, {
 	id: 17,
@@ -164,7 +164,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 17
+		bouquet_id: '57472c6b5dd3a0d0d3f1605b'
 	}
 }, {
 	id: 18,
@@ -174,7 +174,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 3
+		bouquet_id: '57471ed05dd3a0d0d3f1604d'
 	}
 }, {
 	id: 19,
@@ -184,7 +184,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 4
+		bouquet_id: '574720055dd3a0d0d3f1604e'
 	}
 }, {
 	id: 20,
@@ -194,7 +194,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 5
+		bouquet_id: '574721d15dd3a0d0d3f1604f'
 	}
 }, {
 	id: 21,
@@ -204,7 +204,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 6
+		bouquet_id: '574722655dd3a0d0d3f16050'
 	}
 }, {
 	id: 22,
@@ -214,7 +214,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 7
+		bouquet_id: '574723345dd3a0d0d3f16051'
 	}
 }, {
 	id: 23,
@@ -224,7 +224,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 8
+		bouquet_id: '574723f95dd3a0d0d3f16052'
 	}
 }, {
 	id: 24,
@@ -234,7 +234,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 9
+		bouquet_id: '574725f95dd3a0d0d3f16053'
 	}
 }, {
 	id: 25,
@@ -244,7 +244,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 10
+		bouquet_id: '574726d35dd3a0d0d3f16054'
 	}
 }, {
 	id: 26,
@@ -254,7 +254,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 11
+		bouquet_id: '574727ac5dd3a0d0d3f16055'
 	}
 }, {
 	id: 27,
@@ -264,7 +264,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 12
+		bouquet_id: '5747284a5dd3a0d0d3f16056'
 	}
 }, {
 	id: 28,
@@ -274,7 +274,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 13
+		bouquet_id: '5747292f5dd3a0d0d3f16057'
 	}
 }, {
 	id: 29,
@@ -284,7 +284,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 14
+		bouquet_id: '57472a5d5dd3a0d0d3f16058'
 	}
 }, {
 	id: 30,
@@ -294,7 +294,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 15
+		bouquet_id: '57472afb5dd3a0d0d3f16059'
 	}
 }, {
 	id: 31,
@@ -304,7 +304,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 16
+		bouquet_id: '57472bdf5dd3a0d0d3f1605a'
 	}
 }, {
 	id: 32,
@@ -314,7 +314,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 17
+		bouquet_id: '57472c6b5dd3a0d0d3f1605b'
 	}
 }, {
 	id: 33,
@@ -324,7 +324,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 3
+		bouquet_id: '57471ed05dd3a0d0d3f1604d'
 	}
 }, {
 	id: 34,
@@ -334,7 +334,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 4
+		bouquet_id: '574720055dd3a0d0d3f1604e'
 	}
 }, {
 	id: 35,
@@ -344,7 +344,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 5
+		bouquet_id: '574721d15dd3a0d0d3f1604f'
 	}
 }, {
 	id: 36,
@@ -354,7 +354,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 6
+		bouquet_id: '574722655dd3a0d0d3f16050'
 	}
 }, {
 	id: 37,
@@ -364,7 +364,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 7
+		bouquet_id: '574723345dd3a0d0d3f16051'
 	}
 }, {
 	id: 38,
@@ -374,7 +374,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 8
+		bouquet_id: '574723f95dd3a0d0d3f16052'
 	}
 }, {
 	id: 39,
@@ -384,7 +384,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 9
+		bouquet_id: '574725f95dd3a0d0d3f16053'
 	}
 }, {
 	id: 40,
@@ -394,7 +394,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 10
+		bouquet_id: '574726d35dd3a0d0d3f16054'
 	}
 }, {
 	id: 41,
@@ -404,7 +404,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 11
+		bouquet_id: '574727ac5dd3a0d0d3f16055'
 	}
 }, {
 	id: 42,
@@ -414,7 +414,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 12
+		bouquet_id: '5747284a5dd3a0d0d3f16056'
 	}
 }, {
 	id: 43,
@@ -424,7 +424,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 13
+		bouquet_id: '5747292f5dd3a0d0d3f16057'
 	}
 }, {
 	id: 44,
@@ -434,7 +434,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 14
+		bouquet_id: '57472a5d5dd3a0d0d3f16058'
 	}
 }, {
 	id: 45,
@@ -444,7 +444,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 15
+		bouquet_id: '57472afb5dd3a0d0d3f16059'
 	}
 }, {
 	id: 46,
@@ -454,7 +454,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 16
+		bouquet_id: '57472bdf5dd3a0d0d3f1605a'
 	}
 }, {
 	id: 47,
@@ -464,7 +464,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 17
+		bouquet_id: '57472c6b5dd3a0d0d3f1605b'
 	}
 }, {
 	id: 48,
@@ -474,7 +474,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 18
+		bouquet_id: '57471ed05dd3a0d0d3f1604d'
 	}
 }, {
 	id: 49,
@@ -484,7 +484,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 19
+		bouquet_id: '574720055dd3a0d0d3f1604e'
 	}
 }, {
 	id: 50,
@@ -494,7 +494,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 20
+		bouquet_id: '574721d15dd3a0d0d3f1604f'
 	}
 }, {
 	id: 51,
@@ -504,7 +504,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 21
+		bouquet_id: '574722655dd3a0d0d3f16050'
 	}
 }, {
 	id: 52,
@@ -514,7 +514,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 22
+		bouquet_id: '574723345dd3a0d0d3f16051'
 	}
 }, {
 	id: 53,
@@ -524,7 +524,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 23
+		bouquet_id: '574723f95dd3a0d0d3f16052'
 	}
 }, {
 	id: 54,
@@ -534,7 +534,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 24
+		bouquet_id: '574725f95dd3a0d0d3f16053'
 	}
 }, {
 	id: 55,
@@ -544,7 +544,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 25
+		bouquet_id: '574726d35dd3a0d0d3f16054'
 	}
 }, {
 	id: 56,
@@ -554,7 +554,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 26
+		bouquet_id: '574727ac5dd3a0d0d3f16055'
 	}
 }, {
 	id: 57,
@@ -564,7 +564,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 27
+		bouquet_id: '5747284a5dd3a0d0d3f16056'
 	}
 }, {
 	id: 58,
@@ -574,7 +574,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 28
+		bouquet_id: '5747292f5dd3a0d0d3f16057'
 	}
 }, {
 	id: 59,
@@ -584,7 +584,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 29
+		bouquet_id: '57472a5d5dd3a0d0d3f16058'
 	}
 }, {
 	id: 60,
@@ -594,7 +594,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 30
+		bouquet_id: '57472afb5dd3a0d0d3f16059'
 	}
 }, {
 	id: 61,
@@ -604,7 +604,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 31
+		bouquet_id: '57472bdf5dd3a0d0d3f1605a'
 	}
 }, {
 	id: 62,
@@ -614,7 +614,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 32
+		bouquet_id: '57472c6b5dd3a0d0d3f1605b'
 	}
 }, {
 	id: 63,
@@ -624,7 +624,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 18
+		bouquet_id: '57471ed05dd3a0d0d3f1604d'
 	}
 }, {
 	id: 64,
@@ -634,7 +634,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 19
+		bouquet_id: '574720055dd3a0d0d3f1604e'
 	}
 }, {
 	id: 65,
@@ -644,7 +644,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 20
+		bouquet_id: '574721d15dd3a0d0d3f1604f'
 	}
 }, {
 	id: 66,
@@ -654,7 +654,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 21
+		bouquet_id: '574722655dd3a0d0d3f16050'
 	}
 }, {
 	id: 67,
@@ -664,7 +664,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 22
+		bouquet_id: '574723345dd3a0d0d3f16051'
 	}
 }, {
 	id: 68,
@@ -674,7 +674,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 23
+		bouquet_id: '574723f95dd3a0d0d3f16052'
 	}
 }, {
 	id: 69,
@@ -684,7 +684,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 24
+		bouquet_id: '574725f95dd3a0d0d3f16053'
 	}
 }, {
 	id: 70,
@@ -694,7 +694,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 25
+		bouquet_id: '574726d35dd3a0d0d3f16054'
 	}
 }, {
 	id: 71,
@@ -704,7 +704,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 26
+		bouquet_id: '574727ac5dd3a0d0d3f16055'
 	}
 }, {
 	id: 72,
@@ -714,7 +714,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 27
+		bouquet_id: '5747284a5dd3a0d0d3f16056'
 	}
 }, {
 	id: 73,
@@ -724,7 +724,7 @@ var knowledgeBase = [{
 		color_range: 'blue_range'
 	},
 	answer: {
-		bouquet_id: 28
+		bouquet_id: '5747292f5dd3a0d0d3f16057'
 	}
 }, {
 	id: 74,
@@ -734,7 +734,7 @@ var knowledgeBase = [{
 		color_range: 'red_range'
 	},
 	answer: {
-		bouquet_id: 29
+		bouquet_id: '57472a5d5dd3a0d0d3f16058'
 	}
 }, {
 	id: 75,
@@ -744,7 +744,7 @@ var knowledgeBase = [{
 		color_range: 'yellow_range'
 	},
 	answer: {
-		bouquet_id: 30
+		bouquet_id: '57472afb5dd3a0d0d3f16059'
 	}
 }, {
 	id: 76,
@@ -754,7 +754,7 @@ var knowledgeBase = [{
 		color_range: 'white_range'
 	},
 	answer: {
-		bouquet_id: 31
+		bouquet_id: '57472bdf5dd3a0d0d3f1605a'
 	}
 }, {
 	id: 77,
@@ -764,7 +764,7 @@ var knowledgeBase = [{
 		color_range: 'purple_range'
 	},
 	answer: {
-		bouquet_id: 32
+		bouquet_id: '57472c6b5dd3a0d0d3f1605b'
 	}
 }];
 

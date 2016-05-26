@@ -86,7 +86,7 @@ function resultToInput() {
     $("#bouquet .column").each(function() {
       var flower = $(this).children('div').attr('class');
       if (flower == undefined) {
-        flower = "flower8";
+        flower = "flower19";
       }
       flowers = flowers + "#" + flower;
     });

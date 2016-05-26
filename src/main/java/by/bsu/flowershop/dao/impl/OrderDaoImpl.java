@@ -208,4 +208,26 @@ public class OrderDaoImpl extends CommonRepositoryDao implements OrderDao
     }
     return null;
   }
+
+  @Override
+  public String getPlacementFromQuiz(String id)
+  {
+    MongoDatabase mongoDatabase = getDatabase();
+    final String[] placement = new String[1];
+    FindIterable<Document> iterable = mongoDatabase.getCollection( "QUIZ" ).find(
+        new BasicDBObject( "_id", new ObjectId( id ) ) );
+    iterable.forEach( new Block<Document>()
+    {
+      @Override
+      public void apply( final Document document )
+      {
+        placement[0] =  document.getString( "PLACEMENT" );
+      }
+    });
+    if( placement[0] != null )
+    {
+      return placement[0];
+    }
+    return null;
+  }
 }

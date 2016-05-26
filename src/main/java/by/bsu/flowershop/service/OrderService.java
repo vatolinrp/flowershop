@@ -24,5 +24,5 @@ public interface OrderService
 
   String getPlacementFromTopRated( String id );
 
-  public String findPlacement( String id ) throws ServiceException;
+  String findPlacement( String id ) throws ServiceException;
 }

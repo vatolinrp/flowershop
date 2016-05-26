@@ -29,8 +29,7 @@ app.controller('questionController', function($scope) {
 				alert('Cannot suggest.');
 				model.showQuestion = false;
 			} else if(result) {
-				alert('Please checkout bouquet with id : ' + result);
-				window.location.href = '/order-chosen/' + result;
+				window.location.href = '/flowers-1.0/order-chosen/' + result;
 				model.showQuestion = false;
 			}
 		}

@@ -51,7 +51,7 @@ public class HtmlCreator
     {
       flowerMap.put( flower.getFlowerCode(), flower.getImgUrl() );
     }
-    flowerMap.put( "flower8", "" );
+    flowerMap.put( "flower19", "" );
 
     String[] strings = flowers.split("#flower");
     String style       = "float:left;" +
@@ -61,7 +61,7 @@ public class HtmlCreator
     List<Integer> positions = new ArrayList<Integer>();
     for ( String str : strings )
     {
-      for (int i = 1; i <= 8; i++)
+      for (int i = 1; i <= 19; i++)
       {
         if (str.equals( String.valueOf( i ) ) )
         {
@@ -142,7 +142,7 @@ public class HtmlCreator
     List<Integer> positions = new ArrayList<Integer>();
     for (String str : strings)
     {
-      for (int i = 1; i <= 8; i++)
+      for (int i = 1; i <= 19; i++)
       {
         if (str.equals(String.valueOf(i)))
         {
